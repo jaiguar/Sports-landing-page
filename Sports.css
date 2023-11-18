@@ -1,0 +1,135 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* width: 100%; */
+}
+#navbar::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -1;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    margin: 33px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+#navbar ul li :hover{
+    border-bottom:2px solid rgb(255, 255, 255) ;
+}
+#search{
+    position: absolute;
+    right: 13px;
+    border-radius: 10px;
+    text-align: center;
+}
+#search :hover{
+    background-color: black;
+    color: white;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    height: 300px;
+    position: relative;
+}
+#header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(header.jpg) no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+#header div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    /* background-color: aliceblue; */
+    height: 100%;
+    justify-content: center;
+}
+#header div h1{
+    font-size: 4rem;
+}
+#stocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+#stocks::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(background.jpg) no-repeat center center/cover;
+    opacity: 0.52;
+    z-index: -1;
+}
+#stocks h1{
+
+}
+.item{
+    border: 2px solid #a21111;
+    background-color: rgb(183, 129, 129);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    margin: 90px 19px 0px 50px;
+}
+.item img{
+    height: 150px;
+    width: 250px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(Navbar.jpg) no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+#contact button{
+    cursor: pointer;
+}
+#contact button :hover{
+    background-color: black;
+    color: white;
+}
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
